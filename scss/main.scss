@@ -1,0 +1,175 @@
+@font-face { 
+    font-family: Tajawal-Black; 
+    src: url('../fonts/Tajawal-Black.ttf');
+}
+@font-face { 
+    font-family: Tajawal-Bold; 
+    src: url('../fonts/Tajawal-Bold.ttf');
+}
+@font-face { 
+    font-family: Tajawal-ExtraBold; 
+    src: url('../fonts/Tajawal-ExtraBold.ttf');
+}
+@font-face { 
+    font-family: Tajawal-ExtraLight; 
+    src:  url('../fonts/Tajawal-ExtraLight.ttf');
+}
+@font-face { 
+    font-family: Tajawal-Medium; 
+	src:  url('../fonts/Tajawal-Medium.ttf');
+}
+@font-face { 
+    font-family: Tajawal-Light; 
+	src:  url('../fonts/Tajawal-Light.ttf');
+}
+@font-face { 
+    font-family:Tajawal-Regular; 
+	src:  url('../fonts/Tajawal-Regular.ttf');
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+input{
+    padding: 0.5rem 0.5rem;
+    border: 1px solid rgb(255, 18, 18);
+    border-radius: 0.3rem;
+    outline: 0;
+    width: 100%;
+}
+
+.sms-login{
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    padding: 1rem;
+    border: 1px solid rgb(255, 18, 18);
+
+    .sms-login-title{
+        text-align: center;
+        font-family: 'Tajawal-Bold', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    .sms-password, .sms-username, .sms-login-btn{
+        margin-top: 1rem;
+    }
+
+    .sms-login-btn > button{
+        color: rgb(253, 253, 253);
+        background-color: rgb(255, 56, 56);
+        outline: 0;
+        border: 1px solid rgb(255, 56, 56);
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: 'Tajawal-Regular', Arial, Helvetica, sans-serif;
+    }
+}
+
+.sms-navbar{
+    height: 80px;
+    background-color: rgb(255, 18, 18);
+    color: #fff;
+    display: flex;
+    align-items: center;
+
+    .logo{
+        margin-right: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-family: 'Tajawal-Bold', Arial, Helvetica, sans-serif;
+    }
+    
+    .links li:hover, .links li.active {
+        background-color: rgb(207, 0, 0);
+    }
+
+    ul {
+        list-style: none;
+        list-style-type: none;
+        display: inline-block;
+    }
+    
+    li {
+        list-style-type: none;
+        list-style: none;
+        display: inline-block;
+    }
+
+    li a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding: 0.5rem 0.5rem;
+    }
+}
+
+.sms-years-list{
+    ul {
+        display: flex;
+        list-style: none;
+    }
+    li {
+        padding: 0.3rem;
+        
+    }
+    li a{
+        text-decoration: none;
+    }
+    .year{
+        text-align: center;
+        padding: 0.5rem 1rem;
+        background-color: rgb(255, 56, 56);
+        color: #fff;
+    }
+
+    .year p {
+        margin: 0;
+    }
+    .year p:first-of-type{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .year p:last-of-type{
+        margin-top: 0.5rem;
+        font-weight: 700;
+    }
+}
+
+.sms-pagination{
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    li{
+        display: inline-block;
+        padding: 0.3rem;
+        margin: 0 0.1rem;
+        border: 1px solid #ccc;
+    }
+
+    li.active, li:hover {
+        color: #fff;
+        background-color: #ff4848;
+        border: 1px solid #c00101;
+    }
+
+    li:hover{
+        cursor: pointer;
+    }
+}

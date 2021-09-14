@@ -1,0 +1,158 @@
+@font-face {
+  font-family: Tajawal-Black;
+  src: url("../fonts/Tajawal-Black.ttf");
+}
+@font-face {
+  font-family: Tajawal-Bold;
+  src: url("../fonts/Tajawal-Bold.ttf");
+}
+@font-face {
+  font-family: Tajawal-ExtraBold;
+  src: url("../fonts/Tajawal-ExtraBold.ttf");
+}
+@font-face {
+  font-family: Tajawal-ExtraLight;
+  src: url("../fonts/Tajawal-ExtraLight.ttf");
+}
+@font-face {
+  font-family: Tajawal-Medium;
+  src: url("../fonts/Tajawal-Medium.ttf");
+}
+@font-face {
+  font-family: Tajawal-Light;
+  src: url("../fonts/Tajawal-Light.ttf");
+}
+@font-face {
+  font-family: Tajawal-Regular;
+  src: url("../fonts/Tajawal-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+input {
+  padding: 0.5rem 0.5rem;
+  border: 1px solid #ff1212;
+  border-radius: 0.3rem;
+  outline: 0;
+  width: 100%;
+}
+
+.sms-login {
+  width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  padding: 1rem;
+  border: 1px solid #ff1212;
+}
+.sms-login .sms-login-title {
+  text-align: center;
+  font-family: "Tajawal-Bold", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.sms-login .sms-password, .sms-login .sms-username, .sms-login .sms-login-btn {
+  margin-top: 1rem;
+}
+.sms-login .sms-login-btn > button {
+  color: #fdfdfd;
+  background-color: #ff3838;
+  outline: 0;
+  border: 1px solid #ff3838;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Tajawal-Regular", Arial, Helvetica, sans-serif;
+}
+
+.sms-navbar {
+  height: 80px;
+  background-color: #ff1212;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.sms-navbar .logo {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Tajawal-Bold", Arial, Helvetica, sans-serif;
+}
+.sms-navbar .links li:hover, .sms-navbar .links li.active {
+  background-color: #cf0000;
+}
+.sms-navbar ul {
+  list-style: none;
+  list-style-type: none;
+  display: inline-block;
+}
+.sms-navbar li {
+  list-style-type: none;
+  list-style: none;
+  display: inline-block;
+}
+.sms-navbar li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 0.5rem;
+}
+
+.sms-years-list ul {
+  display: flex;
+  list-style: none;
+}
+.sms-years-list li {
+  padding: 0.3rem;
+}
+.sms-years-list li a {
+  text-decoration: none;
+}
+.sms-years-list .year {
+  text-align: center;
+  padding: 0.5rem 1rem;
+  background-color: #ff3838;
+  color: #fff;
+}
+.sms-years-list .year p {
+  margin: 0;
+}
+.sms-years-list .year p:first-of-type {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.sms-years-list .year p:last-of-type {
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+
+.sms-pagination ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.sms-pagination li {
+  display: inline-block;
+  padding: 0.3rem;
+  margin: 0 0.1rem;
+  border: 1px solid #ccc;
+}
+.sms-pagination li.active, .sms-pagination li:hover {
+  color: #fff;
+  background-color: #ff4848;
+  border: 1px solid #c00101;
+}
+.sms-pagination li:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */
