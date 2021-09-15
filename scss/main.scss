@@ -39,12 +39,26 @@ body{
     font-weight: normal;
 }
 
+@import 'util';
+
 input{
     padding: 0.5rem 0.5rem;
     border: 1px solid rgb(255, 18, 18);
     border-radius: 0.3rem;
     outline: 0;
     width: 100%;
+}
+
+button{
+    padding: 0.3rem 0.5rem;
+    outline: 0;
+    background-color: #ff4848;
+    border: 1px solid #c00101;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .sms-login{
@@ -91,9 +105,16 @@ input{
         font-weight: 700;
         font-family: 'Tajawal-Bold', Arial, Helvetica, sans-serif;
     }
+    .links{
+        font-weight: 600;
+    }
     
     .links li:hover, .links li.active {
         background-color: rgb(207, 0, 0);
+    }
+
+    .notfication {
+        margin-right: auto;
     }
 
     ul {
@@ -114,6 +135,15 @@ input{
         color: #fff;
         padding: 0.5rem 0.5rem;
     }
+}
+
+.sms-footer{
+    display: flex;
+    justify-content: center;
+    padding: 0.2rem 0;
+    background-color: #ff1212;
+    color: #fff;
+    direction: ltr;
 }
 
 .sms-years-list{
@@ -171,5 +201,54 @@ input{
 
     li:hover{
         cursor: pointer;
+    }
+}
+
+.sms-students-table{
+    margin-top: 32px;
+}
+
+.sms-table table{
+    width: 100%;   
+    font-family: 'Tajawal-Regular', Arial, sans-serif;
+
+    th {
+        vertical-align: middle;
+        font-weight: 400;
+        text-align: right;
+        padding: 0.3rem 0.2rem;
+        background-color: #ff4848;
+        color: #fff;
+    }
+
+    tr{
+        padding: 0.2rem 0;
+    }
+
+    tr:nth-child(odd){
+        background-color: #ff9e9e;
+    }
+
+    tr:last-child{
+        border-bottom: 1px solid #c00101;
+    }
+}
+
+.sms-student-search{
+    width: 80%;
+    margin: 1.5rem auto 0;
+    position: relative;
+
+    button{
+        padding: 0 0.8rem;
+        position: absolute;
+        left: 0;
+        height: 100%;
+        background-color: #ff4848;
+        color: #fff;
+        outline: 0;
+        border: 0;
+        border-bottom-left-radius: 0.3rem;
+        border-top-left-radius: 0.3rem;
     }
 }
