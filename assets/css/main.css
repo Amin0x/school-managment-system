@@ -454,8 +454,12 @@ button {
   color: #fff;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   align-items: center;
+}
+
+button:hover {
+  background-color: #c00101;
 }
 
 .sms-login {
@@ -624,6 +628,21 @@ button {
   border: 0;
   border-bottom-left-radius: 0.3rem;
   border-top-left-radius: 0.3rem;
+  transition: all 0.3s ease-in-out;
+}
+.sms-student-search button:hover {
+  background-color: #c00101;
+}
+
+.student-card {
+  width: 50%;
+  padding: 1rem;
+  background-color: #fff;
+  margin: 0.3rem 0.2rem;
+  border: 1px solid #ccc;
+}
+.student-card p {
+  font-family: "Tajawal-Regular", Arial, Helvetica, sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */

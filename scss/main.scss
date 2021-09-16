@@ -57,8 +57,12 @@ button{
     color: #fff;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-    display: flex;
+    display: inline-flex;
     align-items: center;
+}
+
+button:hover {
+    background-color: #c00101;
 }
 
 .sms-login{
@@ -208,29 +212,31 @@ button{
     margin-top: 32px;
 }
 
-.sms-table table{
-    width: 100%;   
-    font-family: 'Tajawal-Regular', Arial, sans-serif;
+.sms-table {
+    table {
+        width: 100%;
+        font-family: 'Tajawal-Regular', Arial, sans-serif;
 
-    th {
-        vertical-align: middle;
-        font-weight: 400;
-        text-align: right;
-        padding: 0.3rem 0.2rem;
-        background-color: #ff4848;
-        color: #fff;
-    }
+        th {
+            vertical-align: middle;
+            font-weight: 400;
+            text-align: right;
+            padding: 0.3rem 0.2rem;
+            background-color: #ff4848;
+            color: #fff;
+        }
 
-    tr{
-        padding: 0.2rem 0;
-    }
+        tr {
+            padding: 0.2rem 0;
+        }
 
-    tr:nth-child(odd){
-        background-color: #ff9e9e;
-    }
+        tr:nth-child(odd) {
+            background-color: #ff9e9e;
+        }
 
-    tr:last-child{
-        border-bottom: 1px solid #c00101;
+        tr:last-child {
+            border-bottom: 1px solid #c00101;
+        }
     }
 }
 
@@ -250,5 +256,22 @@ button{
         border: 0;
         border-bottom-left-radius: 0.3rem;
         border-top-left-radius: 0.3rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    button:hover{
+        background-color: #c00101;
+    }
+}
+
+.student-card {
+    width: 50%;
+    padding: 1rem;
+    background-color: #fff;
+    margin: 0.3rem 0.2rem;
+    border: 1px solid #ccc;
+
+    p{
+        font-family: 'Tajawal-Regular', Arial, Helvetica, sans-serif;
     }
 }
