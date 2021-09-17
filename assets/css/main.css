@@ -440,10 +440,11 @@ body {
 
 input {
   padding: 0.5rem 0.5rem;
-  border: 1px solid #ff1212;
+  border: 1px solid rgba(81, 116, 106, 0.329);
   border-radius: 0.3rem;
   outline: 0;
   width: 100%;
+  font-size: 1rem;
 }
 
 button {
@@ -456,6 +457,12 @@ button {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
+}
+
+.login-btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
 }
 
 button:hover {
